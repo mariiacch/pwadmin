@@ -22,20 +22,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }))
 
 
-// Configurar cabeceras y cors 
-app.use(function(req, res, next)
-{ 
-  res.header('Access-Control-Allow-Origin', '*'); 
-  
-  res.header('Access-Control-Allow-Headers', 'Authorization, X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Request-Method'); 
-  
-  res.header('Access-Control-Allow-Methods', 'PUT, POST, OPTIONS'); 
-  res.header('Allow', 'GET, POST, OPTIONS, PUT, DELETE'); 
-  res.header('Access-Control-Allow-Credentials: true');
-  res.header('Access-Control-Max-Age: 240');
-  next(); 
-
-}); 
 
 
 // handling errors
