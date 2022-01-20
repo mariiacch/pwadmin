@@ -1,4 +1,4 @@
-const Product = require("../models/Product");
+
 const StockProducts = require("../models/StockProducts");
 const router = require("express").Router();
 
