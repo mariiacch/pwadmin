@@ -1,6 +1,6 @@
 import { GlobalStyles } from '../styles/GlobalStyles';
 import{useEffect, useState} from 'react'
-import axios from "axios";
+
 import {Modal, ModalBody, ModalFooter} from 'reactstrap';
 import {  useRef } from 'react';
 import { useNavigate } from 'react-router';
