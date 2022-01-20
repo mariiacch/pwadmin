@@ -28,7 +28,7 @@ import GeneralVentasMensual from './pages/GeneralVentasMensual';
 import CreateFactura from './pages/CreateFact';
 import ConsultVentasDiarias from './pages/ConsultVentasDiarias';
 import ConsultVentasMensuales from './pages/ConsultVentasMensual';
-import PdfStock from './pages/PdfStock';
+
 
 
 export default function App() {
@@ -45,8 +45,7 @@ export default function App() {
         <Route path="/login" element=
         { user ? <Navigate to="/"/>: <Login/> }/>
 
-        <Route path="/PdfStock" element=
-        {  <PdfStock/> }/>
+       
 
         <Route path="/logout" element=
         {user 
