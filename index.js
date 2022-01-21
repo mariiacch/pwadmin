@@ -32,9 +32,10 @@ app.use((err, req, res, next) => {
   });
 });
 
-
-
-app.use(cors())
+//cors :( 
+app.use(cors({
+  origin: '*'
+  }));
 
 //activo dotenv
 dotenv.config();
