@@ -10,7 +10,8 @@ router.post("/register", async (req, res) => {
         nombres: req.body.nombres,
         cedula: req.body.cedula,
         contact: req.body.contact,
-       
+        licencia:req.body.licencia,
+        ciudad:req.body.ciudad
       });
   
       //save user and respond
